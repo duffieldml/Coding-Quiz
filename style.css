@@ -1,0 +1,21 @@
+#High-Scores {
+    background-color: blueviolet;
+    color: blue;
+}
+
+/* #timer {
+    float: right;
+}
+
+h1{
+    justify-content: center;
+    display: flex;
+} */
+
+#Instructions,
+h1 {
+    justify-content: center;
+    display: flex;
+}
+
+
