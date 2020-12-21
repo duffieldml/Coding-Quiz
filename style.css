@@ -3,14 +3,14 @@
     color: blue;
 }
 
-/* #timer {
+header {
+    margin: 30px;
+}
+
+#timer {
     float: right;
 }
 
-h1{
-    justify-content: center;
-    display: flex;
-} */
 
 #Instructions,
 h1 {
