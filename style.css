@@ -15,5 +15,11 @@ h1 {
     display: flex;
 }
 
+.hide {
+    display: none;
+}
 
+.show {
+    display: block;
+}
 
