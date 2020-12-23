@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" href="style.css" />
     <title>It's Quiz Time!</title>
@@ -11,12 +13,13 @@
 
 <body>
     <div class="wrapper">
-        <header>
-            <button id="High-Scores">High Scores</button>
-            <div id="timer">Time Left: <span id="time">0</span></div>
-        </header>
+        <div class="col-md-8" id="High-Scores">
+            <a href= "highscore.html">Check out the competition!</a>
+        </div>
+        <div class="col-md-2" id="time">Time Left: <span id= "timer">0</span>
+        </div>
         <div class="class container">
-            <section id="Start">
+            <section id="start" class="show">
                 <h1><strong>Javascript Quiz!</strong></h1>
                 <hr>
                 <br>
@@ -34,21 +37,22 @@
                 </p>
                 <button id="start-quiz">Start!</button>
             </section>
-            <section id="quiz" class="hide">
-                <p id="question"></p>
-                <!---Buttons to be populated during the quiz-->
 
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <div id="user-score" class="invisible">
-                    <p>&nbsp;</p>
+            <section id="quiz" class="hide">
+                <div class="row">
+                    <div class="col-md-8" id="questions">
+                        <h3 id="question-holder"></h3>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="col-md-8" id="choices"></div>
+
                 </div>
             </section>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="questions.js"></script>
 </body>
 
 </html>
