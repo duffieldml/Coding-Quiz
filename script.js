@@ -3,21 +3,22 @@
 //Create array for questions to be asked
 
 var timeEl = document.querySelector("#timer");
-var startButton = document.querySelector("#start-quiz")
+var startButton = document.querySelector("#start-quiz");
+var startEl = document.querySelector("#start");
+var quizEl  =   document.querySelector("#quiz");
 
+var userScore = 0;
 var secondsLeft = 75;
 var wrongTime = 10;
-var questionEl;
+var questionIndex = 0;
+var questionsEl = document.querySelector("#questions");
+var choicesEl = document.querySelector("#choices");
 
-var questionHolder = [];
 
-var questionEl = passwordHolder.join("");
-return questionEl;
-
-for (var i = 0; i < questions; i++) {
-    var question = passwordChoices[Math.floor(Math.random() * passwordChoices.length)];
-    questionHolder.push(Choices);
-  }
+// for (var i = 0; i < questions; i++) {
+//     var question = passwordChoices[Math.floor(Math.random() * passwordChoices.length)];
+//     questionHolder.push(Choices);
+//   }
 
 function setTime() {
   var timerInterval = setInterval(function() {
